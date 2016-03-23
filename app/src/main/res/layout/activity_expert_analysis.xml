@@ -5,14 +5,13 @@
     android:orientation="vertical" >
 
     <include
-        android:id="@+id/news_header"
+        android:id="@+id/home_toppanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         layout="@layout/topbar" />
 
-    <include
-        android:id="@+id/down_panel_rellayout"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@+id/dse_latest_news_list"
-        layout="@layout/downpanel" />
+
 
     <WebView
         android:id="@+id/dse_expert_analysis"
@@ -20,6 +19,13 @@
         android:layout_height="match_parent"
         android:padding="5dp"
         android:layout_above="@+id/down_panel_rellayout"
-        android:layout_below="@+id/news_header" />
+        android:layout_below="@+id/home_toppanel" />
+    <include
+        android:id="@+id/down_panel_rellayout"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        layout="@layout/downpanel" />
 
 </RelativeLayout>

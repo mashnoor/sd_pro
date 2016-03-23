@@ -45,10 +45,10 @@
     {
       "client_info": {
         "mobilesdk_app_id": "1:425183610067:android:3e4a6c4b762a7801",
-        "client_id": "android:com.smartdse2.android",
+        "client_id": "android:com.smartdse.android",
         "client_type": 1,
         "android_client_info": {
-          "package_name": "com.smartdse2.android",
+          "package_name": "com.smartdse.android",
           "certificate_hash": []
         }
       },
@@ -81,6 +81,43 @@
         },
         "google_signin_service": {
           "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425183610067:android:52a254afb696cb4d",
+        "client_id": "android:com.smartdsepro.android",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.smartdsepro.android",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425183610067-lqejkeu47ugomkiqlucah61mq0cnhpkq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
         },
         "ads_service": {
           "status": 1

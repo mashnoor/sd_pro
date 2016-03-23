@@ -5,8 +5,12 @@
     android:orientation="vertical" >
 
     <include
-        android:id="@+id/mytopbar"
+        android:id="@+id/home_toppanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         layout="@layout/topbar" />
+
 
     <LinearLayout
         android:id="@+id/barid"
@@ -16,7 +20,7 @@
         android:orientation="horizontal"
         android:padding="7dp"
         android:weightSum="7"
-        android:layout_below="@id/mytopbar">
+        android:layout_below="@id/home_toppanel">
 
 
         <TextView

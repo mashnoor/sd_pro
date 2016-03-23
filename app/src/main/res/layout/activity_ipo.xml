@@ -5,15 +5,17 @@
     android:orientation="vertical" >
 
     <include
-        android:id="@+id/news_header"
-        android:layout_above="@+id/btn"
+        android:id="@+id/home_toppanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         layout="@layout/topbar" />
 
     <LinearLayout
         android:id="@+id/btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/news_header"
+        android:layout_below="@+id/home_toppanel"
         android:orientation="horizontal"
         android:padding="5dp"
         android:weightSum="3" >

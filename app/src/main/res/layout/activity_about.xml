@@ -5,16 +5,17 @@
     android:background="@android:color/black" >
 
     <include
-        android:id="@+id/info_topbar"
+        android:id="@+id/home_toppanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         layout="@layout/topbar" />
-
     <ScrollView
         android:id="@+id/main_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/down_panel_rellayout"
-        android:layout_below="@+id/info_topbar" >
+        android:layout_below="@+id/home_toppanel" >
 
         <LinearLayout
             android:layout_width="match_parent"

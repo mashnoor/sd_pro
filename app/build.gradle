@@ -1,7 +1,8 @@
 apply plugin: 'com.android.application'
 
 
-apply plugin: 'com.google.gms.google-services'
+
+
 android {
     signingConfigs {
         SmartDSE {
@@ -14,11 +15,11 @@ android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
     defaultConfig {
-        applicationId "com.smartdse2.android"
+        applicationId "com.smartdsepro.android"
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 3
-        versionName "2.0.2 (Beta Release)"
+        versionName "2.0.3"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         signingConfig signingConfigs.SmartDSE
     }
@@ -41,15 +42,16 @@ dependencies {
     compile('com.mikepenz:materialdrawer:4.6.3@aar') {
         transitive = true
     }
-    compile 'com.google.android.gms:play-services-gcm:8.3.0'
-    compile 'com.google.android.gms:play-services-auth:8.3.0'
-    compile 'com.android.support:appcompat-v7:23.1.1'
-    compile 'com.android.support:design:23.1.1'
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+
+    compile 'com.google.android.gms:play-services-auth:8.4.0'
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.android.support:design:23.2.0'
     compile 'com.facebook.android:facebook-android-sdk:4.6.0'
     compile 'com.github.PhilJay:MPAndroidChart:v2.1.6'
     compile 'com.mani:ThinDownloadManager:1.2.3'
-    compile 'com.pubnub:pubnub-android-debug:3.7.+'
-    compile files('/home/mashnoor/AndroidStudioProjects/smartdse_android_studio/libs/AudienceNetwork.jar')
+    compile 'com.pubnub:pubnub-android:3.7.7'
+
 }
 
-
+apply plugin: 'com.google.gms.google-services'

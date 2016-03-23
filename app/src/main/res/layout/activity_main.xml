@@ -5,15 +5,17 @@
     android:orientation="vertical" >
 
     <include
-        android:id="@+id/mytopbar"
-        android:layout_above="@+id/dse_list_search_boxk"
+        android:id="@+id/home_toppanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         layout="@layout/topbar" />
 
     <LinearLayout
         android:id="@+id/dse_list_search_boxk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/mytopbar"
+        android:layout_below="@id/home_toppanel"
         android:orientation="horizontal"
         android:padding="5dp"
         android:weightSum="4" >

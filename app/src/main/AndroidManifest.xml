@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.smartdse2.android">
+    package="com.smartdsepro.android">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <!-- [START gcm_permission] -->
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
@@ -14,7 +14,7 @@
     <!-- [END gcm_permission] -->
     <application
         android:allowBackup="true"
-        android:icon="@drawable/splash_logo"
+        android:icon="@drawable/sd_pro"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <meta-data
@@ -26,9 +26,6 @@
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity
-            android:name="com.facebook.ads.InterstitialAdActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -123,18 +120,22 @@
         <activity
             android:name=".AGMActivity"
             android:label="@string/title_activity_agm"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".NewsDetail"
             android:label="@string/title_activity_news_detail"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Currency"
             android:label="@string/title_activity_currency"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MarketDepth"
             android:label="@string/title_activity_market_depth"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <service
@@ -145,14 +146,17 @@
         <activity
             android:name=".PriceAlert"
             android:label="@string/title_activity_price_alert"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ExpertAnalysis"
             android:label="@string/title_activity_expert_analysis"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".WeeklyReport"
             android:label="@string/title_activity_weekly_report"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".FullScreenGraph"
@@ -161,6 +165,7 @@
         <activity
             android:name=".Chat"
             android:label="@string/title_activity_chat"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Login_logout"
@@ -169,7 +174,9 @@
         <activity
             android:name=".StockOnNewsPaper"
             android:label="@string/title_activity_stock_on_news_paper"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
     </application>
 
 </manifest>

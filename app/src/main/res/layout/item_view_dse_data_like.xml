@@ -18,34 +18,34 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_weight="2"
+            android:layout_weight="1.75"
             android:gravity="center|left"
             android:text="Company Name"
             android:textColor="#00CCCF"
-            android:textSize="11dp" />
+            android:textSize="12dp" />
 
         <TextView
             android:id="@+id/dse_volume"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_weight="1"
+            android:layout_weight="1.50"
             android:gravity="center"
             android:text="LT"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="@android:color/white"
-            android:textSize="10dp" />
+            android:textSize="11dp" />
         <TextView
             android:id="@+id/dse_last_trade"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_weight="1"
+            android:layout_weight=".75"
             android:gravity="center"
             android:text="LT"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="@android:color/white"
-            android:textSize="10dp" />
+            android:textSize="11dp" />
 
         <TextView
             android:id="@+id/dse_change_ammount"
@@ -58,7 +58,7 @@
             android:paddingRight="3dp"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="@android:color/white"
-            android:textSize="9dp" />
+            android:textSize="11dp" />
 
         <LinearLayout
             android:layout_width="0dp"
