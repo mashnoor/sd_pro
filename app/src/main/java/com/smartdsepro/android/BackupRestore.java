@@ -76,7 +76,7 @@ public class BackupRestore {
                             progressDialog.dismiss();
 
                         }
-                        Toast.makeText(activity, "Can't connect to SmartDSE server!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(activity, "Facing problem restoring your data! Please try again.", Toast.LENGTH_LONG).show();
 
                     }
 
@@ -135,9 +135,14 @@ public class BackupRestore {
             if (progressDialog.isShowing() && progressDialog != null) {
                 progressDialog.dismiss();
             }
+
             if(!has_net)
             {
                 Toast.makeText(activity, "Can't connect to SmartDSE server!", Toast.LENGTH_LONG).show();
+            }
+            else
+            {
+                Toast.makeText(activity, "Successfully backed up your data to SmartDSE server.", Toast.LENGTH_LONG).show();
             }
         }
 

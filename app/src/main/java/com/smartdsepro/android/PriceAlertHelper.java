@@ -111,7 +111,7 @@ public class PriceAlertHelper {
                 //Check if the fields are blank
                 if (fieldsBlank(tvhigh, tvlow)) {
                     //If Blank, Show a error msg
-                    showDialog(activity, "Error", "Some fields are blank!", "Ok");
+                    showDialog(activity, "Error", "Some fields are blank! Please check", "Ok");
                     return;
                 }
                 //Check if the input numbers are correct
@@ -225,6 +225,10 @@ public class PriceAlertHelper {
         String high = tvhigh.getText().toString();
         String low = tvlow.getText().toString();
         if (Double.parseDouble(high) <= 0 | Double.parseDouble(low) <= 0)
+        {
+            return true;
+        }
+        else if(Double.parseDouble(high)<Double.parseDouble(low))
         {
             return true;
         }

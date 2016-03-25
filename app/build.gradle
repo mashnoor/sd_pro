@@ -11,6 +11,7 @@ android {
             keyPassword 'menoncXe13@ctv'
             storePassword 'menoncXe13@ctv'
         }
+        useLibrary 'org.apache.http.legacy'
     }
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
@@ -18,8 +19,8 @@ android {
         applicationId "com.smartdsepro.android"
         minSdkVersion 15
         targetSdkVersion 23
-        versionCode 3
-        versionName "2.0.3"
+        versionCode 4
+        versionName "2.1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         signingConfig signingConfigs.SmartDSE
     }
@@ -43,7 +44,6 @@ dependencies {
         transitive = true
     }
     compile 'com.google.android.gms:play-services-gcm:8.4.0'
-
     compile 'com.google.android.gms:play-services-auth:8.4.0'
     compile 'com.android.support:appcompat-v7:23.2.0'
     compile 'com.android.support:design:23.2.0'

@@ -195,9 +195,11 @@ public class Home extends Activity {
 
             @Override
             public void onClick(View view) {
+                /***
                 itemlistIntent.putExtra("DSEX", "DSEX");
 
                 startActivity(itemlistIntent);
+                 ***/
 
             }
         });
@@ -206,8 +208,10 @@ public class Home extends Activity {
 
             @Override
             public void onClick(View arg0) {
+                /***
                 Intent dse30listintent = new Intent(Home.this, DSE30List.class);
                 startActivity(dse30listintent);
+                 **/
 
             }
         });
@@ -215,8 +219,10 @@ public class Home extends Activity {
 
             @Override
             public void onClick(View view) {
+                /***
                 itemlistIntent.putExtra("DSEX", "DSEX");
                 startActivity(itemlistIntent);
+                 ***/
 
             }
         });

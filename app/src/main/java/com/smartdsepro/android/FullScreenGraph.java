@@ -133,22 +133,17 @@ public class FullScreenGraph extends AppCompatActivity {
             lineChart.setScaleEnabled(false);
             dataset.setDrawCircles(false);
 
-            dataset.setDrawFilled(false);
-            dataset.setFillColor(Color.parseColor(Constants.FAVOURITE_COLOR));
+
+
             final LineData data = new LineData(dsex_times, dataset);
 
-            lineChart.setDescription("Description");  // set the description
+
+            lineChart.setDescription("");  // set the description
             lineChart.setTouchEnabled(true);
             lineChart.getAxisRight().setStartAtZero(false);
             lineChart.getAxisLeft().setStartAtZero(false);
-            /***
-             lineChart.getAxisLeft().setAxisMinValue(4560f);
-             lineChart.getAxisLeft().setAxisMaxValue(4599f);
-             lineChart.getAxisRight().setAxisMinValue(4560f);
-             lineChart.getAxisRight().setAxisMaxValue(4599f);
 
 
-             ***/
             lineChart.setBackgroundColor(Color.BLACK);
             lineChart.setGridBackgroundColor(Color.BLACK);
             lineChart.setDrawBorders(true);

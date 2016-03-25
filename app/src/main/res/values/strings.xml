@@ -35,5 +35,6 @@
     <string name="title_activity_login_logout">Login_logout</string>
     <string name="title_activity_stock_on_news_paper">StockOnNewsPaper</string>
     <string name="title_activity_quit">Quit</string>
+    <string name="title_activity_license_check">LicenseCheck</string>
 
 </resources>
