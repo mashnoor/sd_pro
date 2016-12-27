@@ -14,6 +14,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -58,6 +59,8 @@ public class ItemInfo extends Activity {
     String json_data;
 
     String change_amout, ltp, change_percentage;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -211,7 +214,8 @@ public class ItemInfo extends Activity {
 
     private void opensite(String Site) {
         Uri uri = Uri.parse(Site);
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        Intent intent = new Intent(ItemInfo.this,  ItemDetailWeb.class);
+        intent.putExtra("item", tradingcode);
         startActivity(intent);
 
     }
@@ -431,7 +435,7 @@ public class ItemInfo extends Activity {
                     sp_public.setText(result[46]);
                     change.setText(result[22]);
                     //change.setText(change_percentage);
-                   // change_value.setText(change_amout);
+                    // change_value.setText(change_amout);
                     ItemInfo.this.change_value.setText(result[21]);
                     boolean not_traded = false;
                     float change_value;

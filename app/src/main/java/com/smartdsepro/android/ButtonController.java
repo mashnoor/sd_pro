@@ -36,7 +36,7 @@ public class ButtonController {
     private boolean sentfromportfolioactivity = false;
     public static String update_status = "Not Updated Yet";
     //Header Text for Version 2.0.0 (Beta Release)
-    final static String header_text_link = "http://104.131.22.246/dev/smartdsefiles/header_text_2.1.0.txt";
+    final static String header_text_link = "http://104.131.22.246/dev/smartdsefiles/header_text_2.5.1.txt";
     final static String ADV_FILE_NAME = "advertise";
     public static ArrayList<String> header_texts;
     Handler handler;

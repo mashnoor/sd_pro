@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/smartdse_android_studio.iml" filepath="$PROJECT_DIR$/smartdse_android_studio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sd_pro.iml" filepath="$PROJECT_DIR$/sd_pro.iml" />
     </modules>
   </component>
 </project>

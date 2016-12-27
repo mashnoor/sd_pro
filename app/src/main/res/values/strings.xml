@@ -36,5 +36,6 @@
     <string name="title_activity_stock_on_news_paper">StockOnNewsPaper</string>
     <string name="title_activity_quit">Quit</string>
     <string name="title_activity_license_check">LicenseCheck</string>
+    <string name="title_activity_item_detail_web">ItemDetailWeb</string>
 
 </resources>

@@ -12,7 +12,6 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
-
     <!-- [END gcm_permission] -->
     <application
         android:allowBackup="true"
@@ -24,59 +23,64 @@
             android:value="@string/facebook_app_id" />
 
         <activity
-            android:name="com.facebook.FacebookActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
+            android:finishOnTaskLaunch="true"
             android:screenOrientation="portrait" />
         <activity
             android:name=".About"
             android:label="@string/title_activity_about"
+            android:finishOnTaskLaunch="true"
             android:screenOrientation="portrait" />
         <activity
             android:name=".DSE30List"
             android:label="@string/title_activity_dse30_list"
+            android:finishOnTaskLaunch="true"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Home"
             android:label="@string/title_activity_home"
+            android:finishOnTaskLaunch="true"
             android:screenOrientation="portrait" />
         <activity
             android:name=".IPOActivity"
             android:label="@string/title_activity_ipo"
+            android:finishOnTaskLaunch="true"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ItemInfo"
             android:label="@string/title_activity_item_info"
+            android:finishOnTaskLaunch="true"
             android:screenOrientation="portrait" />
         <activity
             android:name=".NewsActivity"
             android:label="@string/title_activity_news"
+            android:finishOnTaskLaunch="true"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Portfolio_activity"
             android:label="@string/title_activity_portfolio_activity"
+            android:finishOnTaskLaunch="true"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Splash_activity"
             android:label="SmartDSE"
-            android:screenOrientation="portrait">
-
-        </activity>
+            android:finishOnTaskLaunch="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Top10Gainers"
             android:label="@string/title_activity_top10_gainers"
+            android:finishOnTaskLaunch="true"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Top10Shares"
             android:label="@string/title_activity_top10_shares"
+            android:finishOnTaskLaunch="true"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Watch_List_list_view"
             android:label="@string/title_activity_watch__list_list_view"
+            android:finishOnTaskLaunch="true"
             android:screenOrientation="portrait" />
 
         <!-- [START gcm_receiver] -->
@@ -119,21 +123,25 @@
             android:name=".AGMActivity"
             android:label="@string/title_activity_agm"
             android:screenOrientation="portrait"
+            android:finishOnTaskLaunch="true"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".NewsDetail"
             android:label="@string/title_activity_news_detail"
             android:screenOrientation="portrait"
+            android:finishOnTaskLaunch="true"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Currency"
             android:label="@string/title_activity_currency"
             android:screenOrientation="portrait"
+            android:finishOnTaskLaunch="true"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MarketDepth"
             android:label="@string/title_activity_market_depth"
             android:screenOrientation="portrait"
+            android:finishOnTaskLaunch="true"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <service
@@ -145,46 +153,60 @@
             android:name=".PriceAlert"
             android:label="@string/title_activity_price_alert"
             android:screenOrientation="portrait"
+            android:finishOnTaskLaunch="true"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ExpertAnalysis"
             android:label="@string/title_activity_expert_analysis"
             android:screenOrientation="portrait"
+            android:finishOnTaskLaunch="true"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".WeeklyReport"
             android:label="@string/title_activity_weekly_report"
             android:screenOrientation="portrait"
+            android:finishOnTaskLaunch="true"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".FullScreenGraph"
             android:label="@string/title_activity_full_screen_graph"
+            android:finishOnTaskLaunch="true"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Chat"
             android:label="@string/title_activity_chat"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:finishOnTaskLaunch="true"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Login_logout"
             android:label="@string/title_activity_login_logout"
+
             android:theme="@android:style/Theme.Holo.Light.Dialog" />
         <activity
             android:name=".StockOnNewsPaper"
             android:label="@string/title_activity_stock_on_news_paper"
             android:screenOrientation="portrait"
+            android:finishOnTaskLaunch="true"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".LicenseCheck"
             android:label="SmartDSE Pro"
             android:screenOrientation="portrait"
+
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            </activity>
+        </activity>
+        <activity
+            android:name=".ItemDetailWeb"
+            android:label="@string/title_activity_item_detail_web"
+            android:finishOnTaskLaunch="true"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

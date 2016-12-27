@@ -27,6 +27,8 @@ public class Constants {
     public static final String WEEKLY_REPORT = "http://104.131.22.246/dev/smartdsefiles/weekly_report.txt";
     public static final String STOCK_ON_NEWS_LINK = "http://104.131.22.246/dev/smartdsefiles/stock_on_news.txt";
 
+    public static final String ITEM_DETAIL_LINK = "http://www.dsebd.org/displayCompany.php?name=";
+
 
     public static final String LOGIN_NAME_NOT_SET = "Not Set";
     public static final String LOGGED_IN_USING_FB = "F";

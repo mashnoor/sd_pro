@@ -63,6 +63,8 @@ public class MainActivity extends Activity {
     public static final String ITEM_VALUES = "http://104.131.22.246/dev/smartdsefiles/itemvalues.txt";
     public static final String ITEM_VALUES_ALL = "http://104.131.22.246/dev/smartdsefiles/itemvalues_all.txt";
 
+    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,8 +73,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         buttonController = new ButtonController(MainActivity.this);
-        dse_Company_datas = new ArrayList<DSE_Company_data>();
-        dse_Company_datas_for_search = new ArrayList<DSE_Company_data>();
+        dse_Company_datas = new ArrayList<>();
+        dse_Company_datas_for_search = new ArrayList<>();
 
         search_text_box = (TextView) findViewById(R.id.dse_list_search_box);
         search_text_box.setVisibility(View.GONE);
@@ -81,18 +83,19 @@ public class MainActivity extends Activity {
 
         }
 
+
 		/*
 		 * search_text_box .setOnFocusChangeListener(new
 		 * View.OnFocusChangeListener() {
-		 * 
+		 *
 		 * @Override public void onFocusChange(View arg0, boolean hasfocus) { if
 		 * (hasfocus) { search_text_box .setBackgroundDrawable(getResources()
 		 * .getDrawable( R.drawable.border_drawer_hex)); } else if (!hasfocus) {
 		 * search_text_box .setBackgroundDrawable(getResources() .getDrawable(
 		 * R.drawable.border_drawer_white));
-		 * 
+		 *
 		 * }
-		 * 
+		 *
 		 * } });
 		 */
 
@@ -306,7 +309,7 @@ public class MainActivity extends Activity {
                     } else {
                         item_color = R.drawable.border_drawer_green_percentage;
                     }
-                    if (!changePercent.equals("--%")) {
+                    if (!changePercent.equals("--%") && !changePercent.equals("%")) {
                         if (!changePercent.equals("Not Traded Today%")) {
                             DSE_Company_data currentCompany_data = new DSE_Company_data(
                                     companyString, lastTrade, changeAmount,
